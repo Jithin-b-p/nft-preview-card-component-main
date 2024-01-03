@@ -1,6 +1,5 @@
 .preview-card {
-  max-width: 50rem;
-  min-width: 37.5rem;
+  width: 50rem;
   display: flex;
   flex-direction: column;
 
@@ -18,10 +17,6 @@
     position: relative;
     cursor: pointer;
     transition: all 0.5s;
-
-    @media only screen and (max-width: 27.625em) {
-      height: 30rem;
-    }
 
     &:hover {
       background-image: linear-gradient(

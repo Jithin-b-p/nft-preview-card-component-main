@@ -28,11 +28,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-
-  @media only screen and (max-width: 27.625em) {
-    font-size: 55%;
-  }
+  font-size: 35%;
 }
 
 body {
@@ -45,10 +41,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media only screen and (max-width: 27.625em) {
-    font-size: 1.2rem;
-  }
 }
 
 .preview-card {
@@ -65,30 +57,18 @@ body {
     &:hover {
       color: var(--color-primary-light);
     }
-
-    @media only screen and (max-width: 27.625em) {
-      font-size: 2.8rem;
-    }
   }
 
   &--summary {
     font-size: 2.5rem;
     font-weight: var(--fw-light);
     line-height: 1.5;
-
-    @media only screen and (max-width: 27.625em) {
-      font-size: 2rem;
-    }
   }
 
   &--pricing {
     & .price,
     & .days-left {
       font-size: 2.4rem;
-
-      @media only screen and (max-width: 27.625em) {
-        font-size: 2rem;
-      }
     }
 
     & .price {
@@ -102,10 +82,6 @@ body {
   &__description {
     font-size: 2.3rem;
     font-weight: var(--fw-light);
-
-    @media only screen and (max-width: 27.625em) {
-      font-size: 1.8rem;
-    }
   }
 
   &__name {

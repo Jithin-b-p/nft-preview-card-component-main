@@ -21,12 +21,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
-}
-@media only screen and (max-width: 27.625em) {
-  html {
-    font-size: 55%;
-  }
+  font-size: 35%;
 }
 
 body {
@@ -38,11 +33,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-@media only screen and (max-width: 27.625em) {
-  body {
-    font-size: 1.2rem;
-  }
 }
 
 .preview-card {
@@ -58,28 +48,13 @@ body {
 .preview-card__details--heading:hover {
   color: var(--color-primary-light);
 }
-@media only screen and (max-width: 27.625em) {
-  .preview-card__details--heading {
-    font-size: 2.8rem;
-  }
-}
 .preview-card__details--summary {
   font-size: 2.5rem;
   font-weight: var(--fw-light);
   line-height: 1.5;
 }
-@media only screen and (max-width: 27.625em) {
-  .preview-card__details--summary {
-    font-size: 2rem;
-  }
-}
 .preview-card__details--pricing .price, .preview-card__details--pricing .days-left {
   font-size: 2.4rem;
-}
-@media only screen and (max-width: 27.625em) {
-  .preview-card__details--pricing .price, .preview-card__details--pricing .days-left {
-    font-size: 2rem;
-  }
 }
 .preview-card__details--pricing .price {
   font-weight: var(--fw-regular);
@@ -90,11 +65,6 @@ body {
   font-size: 2.3rem;
   font-weight: var(--fw-light);
 }
-@media only screen and (max-width: 27.625em) {
-  .nft-creator__description {
-    font-size: 1.8rem;
-  }
-}
 .nft-creator__name {
   color: var(--color-neutral-100);
   transition: all 0.3s;
@@ -104,8 +74,7 @@ body {
 }
 
 .preview-card {
-  max-width: 50rem;
-  min-width: 37.5rem;
+  width: 50rem;
   display: flex;
   flex-direction: column;
   padding: 3.5rem;
@@ -122,11 +91,6 @@ body {
   position: relative;
   cursor: pointer;
   transition: all 0.5s;
-}
-@media only screen and (max-width: 27.625em) {
-  .preview-card__image {
-    height: 30rem;
-  }
 }
 .preview-card__image:hover {
   background-image: linear-gradient(to right bottom, rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)), url(../images/image-equilibrium.jpg);
