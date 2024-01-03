@@ -1,0 +1,194 @@
+:root {
+  --ff-primary: "Outfit", sans-serif;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --color-primary-dark: hsl(215, 51%, 70%);
+  --color-primary-light: rgb(0, 255, 247);
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-200: hsl(215, 32%, 27%);
+  --color-neutral-300: hsl(216, 50%, 16%);
+  --color-neutral-400: hsl(217, 54%, 11%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 27.625em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+body {
+  min-height: 100svh;
+  font-family: var(--ff-primary);
+  font-size: 1.8rem;
+  background-color: var(--color-neutral-400);
+  color: var(--color-primary-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 27.625em) {
+  body {
+    font-size: 1.2rem;
+  }
+}
+
+.preview-card {
+  background-color: var(--color-neutral-300);
+}
+
+.preview-card__details--heading {
+  font-size: 3rem;
+  font-weight: var(--fw-bold);
+  color: var(--color-neutral-100);
+  transition: color 0.3s;
+}
+.preview-card__details--heading:hover {
+  color: var(--color-primary-light);
+}
+@media only screen and (max-width: 27.625em) {
+  .preview-card__details--heading {
+    font-size: 2.8rem;
+  }
+}
+.preview-card__details--summary {
+  font-size: 2.5rem;
+  font-weight: var(--fw-light);
+  line-height: 1.5;
+}
+@media only screen and (max-width: 27.625em) {
+  .preview-card__details--summary {
+    font-size: 2rem;
+  }
+}
+.preview-card__details--pricing .price, .preview-card__details--pricing .days-left {
+  font-size: 2.4rem;
+}
+@media only screen and (max-width: 27.625em) {
+  .preview-card__details--pricing .price, .preview-card__details--pricing .days-left {
+    font-size: 2rem;
+  }
+}
+.preview-card__details--pricing .price {
+  font-weight: var(--fw-regular);
+  color: var(--color-primary-light);
+}
+
+.nft-creator__description {
+  font-size: 2.3rem;
+  font-weight: var(--fw-light);
+}
+@media only screen and (max-width: 27.625em) {
+  .nft-creator__description {
+    font-size: 1.8rem;
+  }
+}
+.nft-creator__name {
+  color: var(--color-neutral-100);
+  transition: all 0.3s;
+}
+.nft-creator__name:hover {
+  color: var(--color-primary-light);
+}
+
+.preview-card {
+  max-width: 50rem;
+  min-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 3.5rem;
+  border-radius: 2rem;
+}
+.preview-card__image {
+  height: 43rem;
+  width: 100%;
+  margin-block-end: 3.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-image: url(../images/image-equilibrium.jpg);
+  background-size: cover;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 27.625em) {
+  .preview-card__image {
+    height: 30rem;
+  }
+}
+.preview-card__image:hover {
+  background-image: linear-gradient(to right bottom, rgba(0, 255, 247, 0.5), rgba(0, 255, 247, 0.5)), url(../images/image-equilibrium.jpg);
+}
+.preview-card__image:hover .view-icon {
+  opacity: 1;
+}
+.preview-card__image .nft-image {
+  height: 100%;
+  width: 100%;
+}
+.preview-card .view-icon {
+  height: 8rem;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  opacity: 0;
+}
+.preview-card__details--heading {
+  margin-block-end: 3rem;
+  cursor: pointer;
+}
+.preview-card__details--summary {
+  padding-inline-end: 2rem;
+  margin-block-end: 4rem;
+}
+.preview-card__details--pricing {
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 4rem;
+}
+.preview-card__details--pricing .price, .preview-card__details--pricing .days-left {
+  display: flex;
+  align-items: center;
+}
+.preview-card__details--pricing .price img, .preview-card__details--pricing .days-left img {
+  height: 3rem;
+  margin-inline-end: 1.2rem;
+}
+.preview-card .border {
+  background-color: var(--color-neutral-200);
+  height: 2px;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 27.625em) {
+  .preview-card {
+    margin-inline: 4rem;
+  }
+}
+
+.nft-creator {
+  display: flex;
+  align-items: center;
+  margin-block-start: 2.5rem;
+  gap: 2.4rem;
+}
+.nft-creator__image {
+  height: 5rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 2px solid var(--color-neutral-100);
+}
+
+/*# sourceMappingURL=style.css.map */

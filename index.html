@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | NFT preview card component</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="preview-card">
+        <picture class="preview-card__image">
+          <!-- <img
+            class="nft-image"
+            src="./images/image-equilibrium.jpg"
+            alt="nft equilibrium image"
+          /> -->
+          <img class="view-icon" src="./images/icon-view.svg" alt="view icon" />
+        </picture>
+
+        <div class="preview-card__details">
+          <h1 class="preview-card__details--heading">Equilibrium #3429</h1>
+          <p class="preview-card__details--summary">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <div class="preview-card__details--pricing">
+            <span class="price">
+              <img src="./images/icon-ethereum.svg" alt="" /> 0.041 ETH
+            </span>
+
+            <span class="days-left"
+              ><img src="./images/icon-clock.svg" alt="" />3 days left</span
+            >
+          </div>
+          <div class="border"></div>
+        </div>
+
+        <div class="nft-creator">
+          <img
+            class="nft-creator__image"
+            src="./images/image-avatar.png"
+            alt="creator image"
+          />
+
+          <p class="nft-creator__description">
+            Creation of <span class="nft-creator__name">Jules Wyvern </span>
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

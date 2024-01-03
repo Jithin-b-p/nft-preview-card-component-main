@@ -1,0 +1,105 @@
+.preview-card {
+  max-width: 50rem;
+  min-width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 3.5rem;
+  border-radius: 2rem;
+
+  &__image {
+    height: 43rem;
+    width: 100%;
+    margin-block-end: 3.5rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background-image: url(../images/image-equilibrium.jpg);
+    background-size: cover;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    @media only screen and (max-width: 27.625em) {
+      height: 30rem;
+    }
+
+    &:hover {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(0, 255, 247, 0.5),
+          rgba(0, 255, 247, 0.5)
+        ),
+        url(../images/image-equilibrium.jpg);
+
+      .view-icon {
+        opacity: 1;
+      }
+    }
+
+    & .nft-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  & .view-icon {
+    height: 8rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    opacity: 0;
+  }
+
+  &__details {
+    &--heading {
+      margin-block-end: 3rem;
+      cursor: pointer;
+    }
+
+    &--summary {
+      padding-inline-end: 2rem;
+      margin-block-end: 4rem;
+    }
+
+    &--pricing {
+      display: flex;
+      justify-content: space-between;
+      margin-block-end: 4rem;
+
+      & .price,
+      & .days-left {
+        display: flex;
+        align-items: center;
+      }
+      & .price img,
+      & .days-left img {
+        height: 3rem;
+        margin-inline-end: 1.2rem;
+      }
+    }
+  }
+  & .border {
+    background-color: var(--color-neutral-200);
+    height: 2px;
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 27.625em) {
+    margin-inline: 4rem;
+  }
+}
+
+.nft-creator {
+  display: flex;
+  align-items: center;
+  margin-block-start: 2.5rem;
+  gap: 2.4rem;
+
+  &__image {
+    height: 5rem;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    border: 2px solid var(--color-neutral-100);
+  }
+}

@@ -1,0 +1,119 @@
+// base holds the base properties, typography etc.
+
+:root {
+  --ff-primary: "Outfit", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --color-primary-dark: hsl(215, 51%, 70%);
+  --color-primary-light: rgb(0, 255, 247);
+
+  --color-neutral-100: hsl(0, 0%, 100%);
+  --color-neutral-200: hsl(215, 32%, 27%);
+  // --color-neutral-300: hsl(216, 50%, 16%)
+  --color-neutral-300: hsl(216, 50%, 16%);
+  // --color-neytral-400: hsl(216, 55%, 11%);
+  --color-neutral-400: hsl(217, 54%, 11%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @media only screen and (max-width: 27.625em) {
+    font-size: 55%;
+  }
+}
+
+body {
+  min-height: 100svh;
+  font-family: var(--ff-primary);
+  font-size: 1.8rem;
+  background-color: var(--color-neutral-400);
+  color: var(--color-primary-dark);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 27.625em) {
+    font-size: 1.2rem;
+  }
+}
+
+.preview-card {
+  background-color: var(--color-neutral-300);
+}
+
+.preview-card__details {
+  &--heading {
+    font-size: 3rem;
+    font-weight: var(--fw-bold);
+    color: var(--color-neutral-100);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+
+    @media only screen and (max-width: 27.625em) {
+      font-size: 2.8rem;
+    }
+  }
+
+  &--summary {
+    font-size: 2.5rem;
+    font-weight: var(--fw-light);
+    line-height: 1.5;
+
+    @media only screen and (max-width: 27.625em) {
+      font-size: 2rem;
+    }
+  }
+
+  &--pricing {
+    & .price,
+    & .days-left {
+      font-size: 2.4rem;
+
+      @media only screen and (max-width: 27.625em) {
+        font-size: 2rem;
+      }
+    }
+
+    & .price {
+      font-weight: var(--fw-regular);
+      color: var(--color-primary-light);
+    }
+  }
+}
+
+.nft-creator {
+  &__description {
+    font-size: 2.3rem;
+    font-weight: var(--fw-light);
+
+    @media only screen and (max-width: 27.625em) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &__name {
+    color: var(--color-neutral-100);
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-primary-light);
+    }
+  }
+}
